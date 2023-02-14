@@ -13,7 +13,6 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/modal.js"></script>
 </head>
 
 <body>
@@ -62,7 +61,7 @@
                     <h1 class="page-header-title">
                         Effective Solutions for Your Business
                     </h1>
-                    <button type="button" class="btn page-header-btn">
+                    <button data-modal-open type="button" class="btn page-header-btn">
                         Order Service
                     </button>
                 </div>
@@ -419,6 +418,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-modal-btn" data-modal-close>
+                <svg class="close-modal-btn-icon" width="8" height="8">
+                    <use href="./images/iconos.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
